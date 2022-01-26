@@ -1,0 +1,18 @@
+
+:root{
+    --White: #ffffff;
+    --dark: #121212;
+}
+
+
+body {
+    background-color: var(--White) ;
+   
+}
+
+body.aan{
+    background-color: var(--dark) ;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
