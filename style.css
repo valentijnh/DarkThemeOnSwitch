@@ -29,13 +29,13 @@ body.on{
 
 .pullingrobe.back{
     animation-name: robe2;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 
 }
 .pullingrobe.robe {
     animation-name: robe;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
