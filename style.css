@@ -7,12 +7,52 @@
 
 body {
     background-color: var(--White) ;
-   
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
-body.aan{
+body.on{
     background-color: var(--dark) ;
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
+}
+
+.pullingrobe {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 10%;
+    top: -60px;
+}
+
+.pullingrobe.back{
+    animation-name: robe2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+.pullingrobe.robe {
+    animation-name: robe;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes robe {
+    0% {top: -60px;}
+    30% {top: 0px;}
+    100%{top: -10};
+}
+
+@keyframes robe2 {
+    0% {
+        top: -10;
+    }
+    30% {
+        top: 0px;
+    }
+    100%{
+        top: -60 ;
+    }
 }
